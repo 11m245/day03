@@ -1,0 +1,25 @@
+
+//for the given JSOn iterate over all for loops(for, for in, forof, forEach)
+
+var keysList=Object.keys(myObj) 
+console.log(keysList);
+//for loop
+console.log("For Loop");
+for(let i=0;i<keysList.length;i++){
+    console.log(`key => ${keysList[i]} value => ${myObj[keysList[i]]}`)
+}
+
+
+// for in loop
+
+console.log("For in Loop");
+for(let x in keysList){
+    console.log(`key => ${keysList[x]} value => ${myObj[keysList[x]]}`)
+}
+
+
+console.log("For of Loop");
+
+for(let x of keysList){
+    console.log(`key => ${x} value => ${myObj[x]}`)
+}

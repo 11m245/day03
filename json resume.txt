@@ -1,0 +1,36 @@
+// Resume in JSON Format
+
+let resume = {
+
+    personaldetails : {name : "Sivaraj M", mobile: 9500852762, email:"sivaraj2siva@gmail.com", gender : "male", dob : "5th June 1994", Blood : "O +ve"},
+    
+    qualification : "B.E.,",
+    
+    academics : { school : 
+                [{  course : "sslc",
+                institute : "GBHSS, Palacode",
+                percentage : 92,
+                yearOfPassing : 2009},
+    
+               {course : " hsc",
+               institute : "Sri Vijay Vidyalaya Matric Hr Sec School, Dharmapuri",
+                percentage : 93,
+                yearOfPassing : 2011}], 
+    
+    College : {  course : "B.E.,",
+            institute : "Karpagam College of Engineering College, Coimbatore",
+            percentage : 82,
+            yearOfPassing : 2015}
+    
+    },
+    
+    hobbies : "Cricket, Volleyball",
+    technicalSkills:  "Java, Python, JS",
+    
+    }
+    
+    console.log(resume);
+    
+    console.log("name is: ", resume.personaldetails.name);
+
+    console.log("college percentage is: ", resume.academics.College.percentage);
